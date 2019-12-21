@@ -1,0 +1,78 @@
+<!DOCTYPE> 
+<html>
+<html>
+<head>
+	<title>positioning</title>
+	<style type="text/css">
+		div{
+			padding: 20px;
+			margin: 20px;
+			border: solid black 5px; 
+		}
+		.outer{
+			background-color: lightgreen;
+		}
+		.middle{
+			background-color: lightblue;
+		}
+		.inner{
+			background-color: pink;
+		}
+		#six{
+			position: fixed;
+			top: 10px;
+			right: 30px;
+		}
+		#eight{
+			position: sticky;
+			top: 50px;
+			bottom: 50px;
+		}
+		#nine{
+			position: sticky;
+			top: 50px;
+			bottom: 50px;
+		}
+		#side{
+			position: absolute;
+			top: 100px;
+			right: 100px;
+		}
+		#blah{
+			position: relative;
+			top: 10px;
+			left: 10px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="outer">
+		<div class="middle">
+			<div class="inner">1</div>
+			<div class="inner">2</div>
+			<div class="inner">3</div>
+			<div class="inner">4</div>
+			<div class="inner">5</div>
+		</div>
+		<div class="middle">
+			<div id="six" class="inner">6</div>
+			<div id="seven" class="inner">7</div>
+			<div id="eight" class="inner">8</div>
+			<div id="nine" class="inner">9</div>
+		</div>
+		<div id="side" class="middle">
+			<div id="ten" class="inner">10</div>
+			<div id="eleven" class="inner">11</div>
+			<div id="twelve" class="inner">12</div>
+		</div>
+		<div id="blah" class="middle">
+			<div id="13" class="inner">13</div>
+			<div id="14" class="inner">14</div>
+			<div id="15" class="inner">15</div>
+			<div id="16" class="inner">16</div>
+		</div>
+	</div>
+
+</body>
+</html>

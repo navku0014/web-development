@@ -1,0 +1,50 @@
+.sence{
+	height: 500px;
+	width: 500px;
+	perspective: 500px;
+}
+.cube{
+	margin: 120px;
+	transform-style: preserve-3d;
+	padding-top: 250px;
+	padding-left: 100px;
+}
+.face{
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	border: solid black 1px;
+	color: white;
+	font-size: 40px;
+	text-align: center;
+	opacity: 1;
+
+}
+.cube:hover {
+  transform: rotateX(360deg) rotateZ(360deg);
+  transition: 5s;
+}
+
+.cube:active {
+  transform: rotateY(360deg) rotateZ(360deg);
+  transition: 5s;
+}
+.face.front{
+	transform: translateZ(50px);
+}
+.face.back{
+	transform: translateZ(-50px);
+}
+.face.left{
+	transform: translateX(50px) rotateY(90deg) ;
+}
+.face.right{
+	transform: translateX(-50px) rotateY(90deg);
+}
+.face.top{
+	transform: translateY(50px) rotateX(90deg);
+}
+.face.bottom{
+	transform: translateY(-50px) rotateX(90deg);
+}

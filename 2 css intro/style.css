@@ -1,0 +1,21 @@
+.facebook{
+	padding-left: 30px;
+	background-color: pink;
+	font-style: italic;
+}
+.twitter{
+	padding-left: 30px;
+	background-color: lightgreen;
+}
+.instagram{
+	padding-left: 30px;
+	background-color: orange;
+}
+.snapchat{
+	padding-left: 30px;
+	background-color: blue;
+}
+.tiktok{
+	padding-left: 30px;
+	background-color: silver;
+}
